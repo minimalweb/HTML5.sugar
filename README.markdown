@@ -1,9 +1,16 @@
 HTML5 Sugar
 ===========
 
-This Sugar adds autocompletion for HTML5 tags and attributes.
+This sugar adds autocompletion for HTML5 tags and attributes.
 
-Installation
-============
+Install using Git
+=================
 
-Download the source and put it in YourHomeFolder/Library/Application Support/Espresso/Sugars/
+`cd ~/Library/Application\ Support/Espresso/Sugars/`
+`git clone git://github.com/minimalweb/HTML5.sugar.git`
+
+
+Installation manually
+=====================
+
+Download the source and uncompress it. Rename the resulting folder to `HTML5.sugar` and put it in `YourHomeFolder/Library/Application Support/Espresso/Sugars/`.
