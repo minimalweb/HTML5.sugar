@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+CodeSense Providers map contexts in a document to possible completions. The actual completions are defined in the various CodeSense libraries, categorized using their key. A CodeSense Provider tells Espresso what CodeSense libraries are active in the current context. One of these XML files can contain many <provider> elements.
+
+-->
+<codesense>
+	
+	<!-- HTML tags -->
+	<provider>
+		<selector>text.html - *, tag.open.html, tag.self-closing.html</selector>
+		<completions>de.minimalweb.html5.tags</completions>
+		<complete-match capture="2">(&lt;)([a-zA-Z0-9-]*)</complete-match>
+		<require-suffix>(\s|>|^)</require-suffix>
+	</provider>
+	
+	<!-- HTML attributes -->
+	<provider>
+		<selector>tag.open.html:has-child(name:capture(tag)) > attribute-name, tag.open.html:has-child(name:capture(tag)) > punctuation.definition.end, tag.open.html:has-child(name:capture(tag))</selector>
+		<completions>de.minimalweb.html5.tag.${tag}.attributes</completions>
+		<complete-match capture="2">(\s)([a-zA-Z0-9-]*)</complete-match>
+		<require-suffix>(\s|=|>|^)</require-suffix>
+	</provider>
+	
+	<!-- HTML attribute values -->
+	<provider>
+		<selector>tag.open.html:has-child(name:capture(tag)) > attribute-name:capture(attribute) + string > punctuation.end, tag.self-closing.html:has-child(name:capture(tag)) > attribute-name:capture(attribute) + string > punctuation.end</selector>
+		<completions>de.minimalweb.html5.tag.${tag}.attribute-values.${attribute}</completions>
+		<complete-match capture="2">("|'|)([a-zA-Z0-9-]*)</complete-match>
+		<!--require-suffix>(\s|>|^)</require-suffix-->
+	</provider>
+	
+</codesense>

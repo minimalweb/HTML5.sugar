@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+CodeSense Libraries simply define lists of completions, categorized by keys. They don't define any criteria for when they should be used; this is the domain of a CodeSense Provider.
+
+-->
+<codesense version="1.0">
+
+	<behavior>
+		<append-dynamic>
+			<matched-suffix>(\s*=)|[^=]</matched-suffix>
+			<transform-into>(?1::="$1"$0)</transform-into>
+		</append-dynamic>
+	</behavior>
+	
+	<set name="de.minimalweb.html5.tag.audio.attributes">
+		<completion string="src" />
+		<completion string="preload" />
+		<completion string="autoplay" />
+		<completion string="loop" />
+		<completion string="controls" />
+	</set>
+	
+	<set name="de.minimalweb.html5.tag.input.attributes">
+		<completion string="autocomplete" />
+		<completion string="autofocus" />
+		<completion string="list" />
+		<completion string="required" />
+		<completion string="multiple" />
+		<completion string="pattern" />
+		<completion string="min" />
+		<completion string="max" />
+		<completion string="step" />
+		<completion string="placeholder" />
+	</set>
+	
+	<set name="de.minimalweb.html5.tag.meter.attributes">
+		<completion string="max" />
+		<completion string="min" />
+		<completion string="high" />
+		<completion string="low" />
+		<completion string="optimum" />
+		<completion string="value" />
+	</set>
+	
+	<set name="de.minimalweb.html5.tag.progress.attributes">
+		<completion string="max" />
+		<completion string="min" />
+		<completion string="value" />
+	</set>
+	
+	<set name="de.minimalweb.html5.tag.source.attributes">
+		<completion string="src" />
+		<completion string="type" />
+		<completion string="media" />
+	</set>
+	
+	<set name="de.minimalweb.html5.tag.video.attributes">
+		<completion string="src" />
+		<completion string="poster" />
+		<completion string="preload" />
+		<completion string="autoplay" />
+		<completion string="loop" />
+		<completion string="controls" />
+		<completion string="width" />
+		<completion string="height" />
+	</set>
+	
+</codesense>

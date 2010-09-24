@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<action-recipes>
+	
+	<snippet id="de.minimalweb.TextActions.HTML5.html5forie" category="tools.Snippets">
+		<title>Javascript: HTML5 for IE</title>
+		<text><![CDATA[<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->]]></text>
+		<syntax-context>html, html *</syntax-context>
+	</snippet>
+	
+</action-recipes>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings>
+	<meta>
+		<name>HTML5.sugar</name>
+		<description>Tags and Completions for HTML5</description>
+		<author>Maurice</author>
+		<identifier>de.minimalweb.Sugar.HTML5</identifier>
+		<version status="release">0.1</version>
+		<download format="git">git://github.com/minimalweb/HTML5.sugar.git</download>
+	</meta>
+</settings>

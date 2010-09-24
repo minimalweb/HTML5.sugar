@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+CodeSense Libraries simply define lists of completions, categorized by keys. They don't define any criteria for when they should be used; this is the domain of a CodeSense Provider.
+
+-->
+<codesense version="1.0">
+	
+	<set name="de.minimalweb.html5.tag.input.attribute-values.type">
+		<completion string="search" />
+		<completion string="tel" />
+		<completion string="email" />
+		<completion string="url" />
+		<completion string="datetime" />
+		<completion string="datetime-local" />
+		<completion string="date" />
+		<completion string="month" />
+		<completion string="week" />
+		<completion string="time" />
+		<completion string="number" />
+		<completion string="range" />
+		<completion string="color" />
+	</set>
+	
+	<set name="de.minimalweb.html5.tag.audio.attribute-values.preload">
+		<completion string="none" />
+		<completion string="metadata" />
+		<completion string="auto" />
+	</set>
+	
+	<set name="de.minimalweb.html5.tag.video.attribute-values.preload">
+		<completion string="none" />
+		<completion string="metadata" />
+		<completion string="auto" />
+	</set>
+	
+</codesense>
