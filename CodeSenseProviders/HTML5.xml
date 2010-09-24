@@ -16,7 +16,7 @@ CodeSense Providers map contexts in a document to possible completions. The actu
 	
 	<!-- HTML attributes -->
 	<provider>
-		<selector>tag.open.html:has-child(name:capture(tag)) > attribute-name, tag.open.html:has-child(name:capture(tag)) > punctuation.definition.end, tag.open.html:has-child(name:capture(tag))</selector>
+		<selector>tag.open.html:has-child(name:capture(tag)) > attribute-name, tag.open.html:has-child(name:capture(tag)) > punctuation.definition.end, tag.open.html:has-child(name:capture(tag)), tag.self-closing.html:has-child(name:capture(tag)) > attribute-name, tag.self-closing.html:has-child(name:capture(tag)) > punctuation.definition.end, tag.self-closing.html:has-child(name:capture(tag))</selector>
 		<completions>de.minimalweb.html5.tag.${tag}.attributes</completions>
 		<complete-match capture="2">(\s)([a-zA-Z0-9-]*)</complete-match>
 		<require-suffix>(\s|=|>|^)</require-suffix>
@@ -24,8 +24,9 @@ CodeSense Providers map contexts in a document to possible completions. The actu
 	
 	<!-- HTML attribute values -->
 	<provider>
-		<selector>tag.open.html:has-child(name:capture(tag)) > attribute-name:capture(attribute) + string > punctuation.end, tag.self-closing.html:has-child(name:capture(tag)) > attribute-name:capture(attribute) + string > punctuation.end</selector>
+		<selector>tag.open.html:has-child(name:capture(tag)) > attribute-name:capture(attribute) + separator + string > punctuation.end, tag.self-closing.html:has-child(name:capture(tag)) > attribute-name:capture(attribute) + separator + string > punctuation.end</selector>
 		<completions>de.minimalweb.html5.tag.${tag}.attribute-values.${attribute}</completions>
+		<completions>com.macrabbit.html.tag.${tag}.attribute-values.${attribute}</completions>
 		<complete-match capture="2">("|'|)([a-zA-Z0-9-]*)</complete-match>
 		<!--require-suffix>(\s|>|^)</require-suffix-->
 	</provider>
