@@ -94,6 +94,7 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		<completion string="figure" />
 		<completion string="figcaption" />
 		<completion string="mark" />
+		<completion string="menu" />
 		<completion string="meter" />
 		<completion string="progress" />
 		<completion string="section" />

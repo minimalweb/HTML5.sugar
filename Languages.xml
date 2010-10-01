@@ -3,7 +3,7 @@
 	<meta>
 		<name>HTML5.sugar</name>
 		<description>Tags and Completions for HTML5</description>
-		<author>Maurice</author>
+		<author>Maurice Kühlborn</author>
 		<identifier>de.minimalweb.Sugar.HTML5</identifier>
 		<version status="release">0.1</version>
 		<download format="git">git://github.com/minimalweb/HTML5.sugar.git</download>

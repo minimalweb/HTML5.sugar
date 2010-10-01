@@ -1,3 +1,5 @@
+![HTML5 Sugar](http://projekte.minimalweb.de/MWB/html5sugar.png)
+
 HTML5 Sugar
 ===========
 
