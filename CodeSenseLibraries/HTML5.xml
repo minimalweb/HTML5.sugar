@@ -65,7 +65,7 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 			<behavior>
 				<append-dynamic>
 					<matched-suffix>(\s*:)|[^:]</matched-suffix>
-					<transform-into>(?1:: src="${1:videofile}" type="$2"${3: /}>$0)</transform-into>
+					<transform-into>(?1:: src="${1:file}" type="$2"${3: /}>$0)</transform-into>
 				</append-dynamic>
 			</behavior>
 		</completion>
