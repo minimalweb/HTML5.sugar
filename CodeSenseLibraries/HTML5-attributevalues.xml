@@ -37,4 +37,12 @@
 		<completion string="audio/mpeg" />
 	</set>
 	
+	<set name="de.minimalweb.html5.tag.track.attribute-values.kind">
+		<completion string="subtitles" />
+		<completion string="captions" />
+		<completion string="descriptions" />
+		<completion string="chapters" />
+		<completion string="metadata" />
+	</set>
+	
 </codesense>
