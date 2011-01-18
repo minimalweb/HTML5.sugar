@@ -16,22 +16,66 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 	<set name="de.minimalweb.html5.tag.audio.attributes">
 		<completion string="src" />
 		<completion string="preload" />
-		<completion string="autoplay" />
-		<completion string="loop" />
-		<completion string="controls" />
+		<completion string="autoplay">
+			<behavior>
+				<append-dynamic>
+					<matched-suffix>(\s*=)|[^=]</matched-suffix>
+					<transform-into>(?1::$1$0)</transform-into>
+				</append-dynamic>
+			</behavior>
+		</completion>
+		<completion string="loop">
+			<behavior>
+				<append-dynamic>
+					<matched-suffix>(\s*=)|[^=]</matched-suffix>
+					<transform-into>(?1::$1$0)</transform-into>
+				</append-dynamic>
+			</behavior>
+		</completion>
+		<completion string="controls">
+			<behavior>
+				<append-dynamic>
+					<matched-suffix>(\s*=)|[^=]</matched-suffix>
+					<transform-into>(?1::$1$0)</transform-into>
+				</append-dynamic>
+			</behavior>
+		</completion>
 	</set>
 	
 	<set name="de.minimalweb.html5.tag.input.attributes">
 		<completion string="autocomplete" />
-		<completion string="autofocus" />
 		<completion string="list" />
-		<completion string="required" />
-		<completion string="multiple" />
+		<completion string="required">
 		<completion string="pattern" />
 		<completion string="min" />
 		<completion string="max" />
 		<completion string="step" />
 		<completion string="placeholder" />
+		<completion string="autofocus">
+			<behavior>
+				<append-dynamic>
+					<matched-suffix>(\s*=)|[^=]</matched-suffix>
+					<transform-into>(?1::$1$0)</transform-into>
+				</append-dynamic>
+			</behavior>
+		</completion>
+		<completion string="autofocus">
+			<behavior>
+				<append-dynamic>
+					<matched-suffix>(\s*=)|[^=]</matched-suffix>
+					<transform-into>(?1::$1$0)</transform-into>
+				</append-dynamic>
+			</behavior>
+		</completion>
+		<completion string="multiple">
+		<completion string="autofocus">
+			<behavior>
+				<append-dynamic>
+					<matched-suffix>(\s*=)|[^=]</matched-suffix>
+					<transform-into>(?1::$1$0)</transform-into>
+				</append-dynamic>
+			</behavior>
+		</completion>
 	</set>
 	
 	<set name="de.minimalweb.html5.tag.meter.attributes">
