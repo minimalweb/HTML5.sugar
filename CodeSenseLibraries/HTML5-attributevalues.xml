@@ -1,9 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-
-CodeSense Libraries simply define lists of completions, categorized by keys. They don't define any criteria for when they should be used; this is the domain of a CodeSense Provider.
-
--->
 <codesense version="1.0">
 	
 	<set name="de.minimalweb.html5.tag.input.attribute-values.type">
