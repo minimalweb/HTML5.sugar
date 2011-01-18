@@ -16,15 +16,6 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 			</append-dynamic>
 		</behavior>
 		
-		<completion string="audio">
-			<behavior>
-				<append-dynamic>
-					<matched-suffix>(\s*:)|[^:]</matched-suffix>
-					<transform-into>(?1:: src="${1:audiofile}"${2: preload="${3:none}"}${4: controls}>$0&lt;/${completion}>)</transform-into>
-				</append-dynamic>
-			</behavior>
-		</completion>
-		
 		<completion string="datalist">
 			<behavior>
 				<append-dynamic>
@@ -79,17 +70,9 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 			</behavior>
 		</completion>
 		
-		<completion string="video">
-			<behavior>
-				<append-dynamic>
-					<matched-suffix>(\s*:)|[^:]</matched-suffix>
-					<transform-into>(?1:: src="${1:videofile}"${2: preload="${3:none}"}${4: controls}>$0&lt;/${completion}>)</transform-into>
-				</append-dynamic>
-			</behavior>
-		</completion>
-		
 		<completion string="article" />
 		<completion string="aside" />
+		<completion string="audio" />
 		<completion string="hgroup" />
 		<completion string="figure" />
 		<completion string="figcaption" />
@@ -99,6 +82,7 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		<completion string="progress" />
 		<completion string="section" />
 		<completion string="track" />
+		<completion string="video" />
 	</set>
 	
 </codesense>

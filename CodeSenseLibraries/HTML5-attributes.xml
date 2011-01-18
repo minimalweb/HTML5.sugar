@@ -55,15 +55,51 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		<completion string="media" />
 	</set>
 	
+	<set name="de.minimalweb.html5.tag.track.attributes">
+		<completion string="kind" />
+		<completion string="src" />
+		<completion string="srclang" />
+		<completion string="label" />
+		<completion string="default">
+			<behavior>
+				<append-dynamic>
+					<matched-suffix>(\s*=)|[^=]</matched-suffix>
+					<transform-into>(?1::$1$0)</transform-into>
+				</append-dynamic>
+			</behavior>
+		</completion>
+	</set>
+	
 	<set name="de.minimalweb.html5.tag.video.attributes">
 		<completion string="src" />
 		<completion string="poster" />
 		<completion string="preload" />
-		<completion string="autoplay" />
-		<completion string="loop" />
-		<completion string="controls" />
 		<completion string="width" />
 		<completion string="height" />
+		<completion string="autoplay">
+			<behavior>
+				<append-dynamic>
+					<matched-suffix>(\s*=)|[^=]</matched-suffix>
+					<transform-into>(?1::$1$0)</transform-into>
+				</append-dynamic>
+			</behavior>
+		</completion>
+		<completion string="loop">
+			<behavior>
+				<append-dynamic>
+					<matched-suffix>(\s*=)|[^=]</matched-suffix>
+					<transform-into>(?1::$1$0)</transform-into>
+				</append-dynamic>
+			</behavior>
+		</completion>
+		<completion string="controls">
+			<behavior>
+				<append-dynamic>
+					<matched-suffix>(\s*=)|[^=]</matched-suffix>
+					<transform-into>(?1::$1$0)</transform-into>
+				</append-dynamic>
+			</behavior>
+		</completion>
 	</set>
 	
 </codesense>
