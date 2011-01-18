@@ -34,4 +34,12 @@ CodeSense Libraries simply define lists of completions, categorized by keys. The
 		<completion string="auto" />
 	</set>
 	
+	<set name="de.minimalweb.html5.tag.source.attribute-values.type">
+		<completion string="video/mp4" />
+		<completion string="video/webm" />
+		<completion string="video/ogg" />
+		<completion string="audio/ogg" />
+		<completion string="audio/mpeg" />
+	</set>
+	
 </codesense>
